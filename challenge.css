@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.maincontainer {
+    background-image: url(./image/pattern1.png ), url(./image/Pattern.png), url(./image/Gradient.svg);
+    background-position: top left, left top, bottom center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #020B13;
+    /* background-image: url(./Waitlist.png) */
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    width: 100%;
+
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo {
+    display: flex;
+    padding-top: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.heading {
+
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Jost', sans-serif;
+    background-color: #020B13;
+
+    background: linear-gradient(to right, #DB403C, #8538A8);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+}
+
+.paragraph {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+
+    /* Dark / Text - Primary */
+
+    color: #B1B7E9;
+
+    opacity: 0.5;
+}
+
+.section2 {
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    width: 100%;
+    margin: 40px;
+
+
+
+
+}
+
+.input {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+
+    /* Dark/Type / Primary */
+
+    color: #B1B7E9;
+
+
+    border: 1px solid #B1B7E9;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 40%;
+    display: block;
+    padding: 30px 30px;
+    /* margin: 30px 30px; */
+    background: transparent
+}
+
+@font-face {
+    font-family: "avenir";
+    src: url("./AvenirNextLTPro-It.otf");
+}
+
+:root {
+    --avenir-font: avenir;
+}
+
+.button {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    /* line-height: 150%; */
+    /* identical to box height, or 24px */
+
+
+    color: #070918;
+
+    text-align: center;
+    background: #FFFFFF;
+    opacity: 0.5;
+    border-radius: 16px;
+    padding: 30px;
+    margin-left: 10px;
+    align-self: stretch;
+
+}
+
+.section3 {
+    border: 1px solid #3f2034;
+    border-radius: 12px;
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto; 
+    width: 50%;
+    padding: 20px 20px;
+    margin-top: 100px;
+}
+
+
+
+.available {
+    display: flex;
+    /* justify-content: center; */
+    /* margin: auto; */
+    color: #d0d3f0;
+    font-family: 'Jost', sans-serif;
+    weight: normal;
+    
+}
+
+.window {
+    height: 50px;
+}
+
+.apple {
+    height: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.linux {
+    height: 50px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* buttom: center; */
+    padding-top: 20px;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto
+}
+
+.php {
+    font-family: 'Jost', sans-serif;
+    color: #e9ebfa;
+    weight: normal;
+
+}
+/*media queries*/
+@media screen and (max-width: 880px){
+    .section2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:auto;
+    
+    
+    }
+    .input{
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .button{
+        width: 20%;
+        margin:auto;
+        padding: 20px;
+        /* height: 20px; */
+        /* flex-direction: ; */
+    }
+    .heading{
+        justify-items: center;
+        /* align-items: */
+    }
+    .logo{
+        /* height: ; */
+    }
+    .section3{
+        flex-direction: column;
+
+    }
+    .available{
+        flex-direction:column;
+    }
+    .php{
+        margin: auto ;
+        /* justify-content: center; */
+        text-align: center;
+
+    }
+    .image{
+        display: none;
+    }
+    .twitter{
+        display: none;
+    }
+    .footer{
+        width: 15%;
+    }
+
+}
+    
